@@ -107,3 +107,6 @@ ENV/
 
 # sqlite db
 db.sqlite3
+
+# exclude files with confidential keys
+secret.py
