@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+from mysite import secret
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -126,3 +127,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
             os.path.join(BASE_DIR, 'static'),
 )
+
+# Configuration for Email Server
+EMAIL_HOST = secret.HOST
+EMAIL_HOST_USER = secret.USER
+EMAIL_HOST_PASSWORD = secret.PASSWORD
+EMAIL_PORT = secret.PORT
+EMAIL_USE_TLS = secret.USE_TLS
