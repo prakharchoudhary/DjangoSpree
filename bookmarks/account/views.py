@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
 from .forms import LoginForm
 
 # Create your views here.
@@ -26,3 +27,15 @@ def user_login(request):
 		form = LoginForm()
 
 	return render(request, 'account/login.html', {'form': form})
+
+@login_required
+def dashboard(request):
+	return render(request, 'account/dashboard.html', {'section': 'dashboard'})
+
+"""
+--> section variable:
+
+We are going to use this variable to track which
+section of the site the user is watching. Multiple views may correspond to the same
+section. This is a simple way to define which section each view corresponds to.
+"""	
