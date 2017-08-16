@@ -32,4 +32,5 @@ urlpatterns = [
 
 	# user views
 	url(r'^$', views.dashboard, name='dashboard'),
+	url(r'^edit/$', views.edit, name='edit'),
 ]
