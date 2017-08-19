@@ -33,8 +33,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # Project Apps
-    'account',
 
     # django package apps
     'django.contrib.admin',
@@ -47,6 +45,9 @@ INSTALLED_APPS = [
     # third-party apps
     'social_django',
 
+    # Project Apps
+    'account',
+    'images',
 ]
 
 MIDDLEWARE = [
