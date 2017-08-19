@@ -22,4 +22,10 @@
 		</form>
 		<p><a href="{% url "password_reset" %}">Forgot password?</a></p>
 	</div>
+	<div class="social">
+		<ul>
+			<li class="facebook"><a href="{% url 'social:begin' backend='facebook' %}">Sign in with Facebook</a></li>
+			<li class="google"><a href="{% url 'social:begin'  backend='google-oauth2' %}">Login with Google</a></li>
+		</ul>
+	</div>
 {% endblock %}
