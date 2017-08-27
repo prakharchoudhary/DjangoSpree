@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
     # third-party apps
     'social_django',
+    'sorl.thumbnail',
 
     # Project Apps
     'account',
