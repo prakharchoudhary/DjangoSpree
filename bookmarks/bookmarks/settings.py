@@ -164,3 +164,7 @@ SOCIAL_AUTH_FACEBOOK_SECRET = keys.FB_SECRET
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = keys.GOOGLE_OAUTH2_KEY
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = keys.GOOGLE_OAUTH2_SECRET
+
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])
+}
