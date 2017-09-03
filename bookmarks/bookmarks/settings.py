@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     # Project Apps
     'account',
     'images',
+    'actions',
 ]
 
 MIDDLEWARE = [
