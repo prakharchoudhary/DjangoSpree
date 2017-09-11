@@ -72,6 +72,7 @@ def image_list(request):
 	page = request.GET.get('page')
 	try:
 		images = paginator.page(page)
+		images_by_popularity = Image.objects.order_by('-total_likes')
 	
 	except PageNotAnInteger:
 		if request.is_ajax():
