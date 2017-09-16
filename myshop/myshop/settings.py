@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'shop',
+    'cart',
 ]
 
 MIDDLEWARE = [
@@ -121,4 +122,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/') 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+CART_SESSION_ID = 'cart'
