@@ -139,3 +139,7 @@ EMAIL_BACKEND = {
 # django-paypal settings
 PAYPAL_RECEIVER_EMAIL = "prakhar2397@gmail.com"
 PAYPAL_TEST = True
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1
