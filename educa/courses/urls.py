@@ -14,4 +14,7 @@ urlpatterns = [
 	url(r'^(?P<pk>\d+)/delete/$',
 		views.CourseDeleteView.as_view(),
 		name='course_delete'),
+	url(r'^(?P<pk>\d+)/module/$',
+		views.CourseModuleUpdateView.as_view(),
+		name='course_module_update'),
 ]
