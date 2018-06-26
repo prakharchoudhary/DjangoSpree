@@ -1,1 +1,12 @@
+# ignore all  
+
 *.jpg
+*.jpeg
+*.png
+*.bmp
+*.txt
+*.avi
+*.mp3
+*.mp4
+*.arm
+*.flv
